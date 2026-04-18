@@ -1,0 +1,58 @@
+# ============================================================
+#  SST Manager — .gitignore
+#  Nunca suba .env ou arquivos com credenciais/dados reais
+# ============================================================
+
+# ── Variáveis de ambiente (NUNCA subir) ─────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Dependências ────────────────────────────────────────────
+/vendor/
+/node_modules/
+
+# ── Build front-end ─────────────────────────────────────────
+/public/hot
+/public/storage
+/public/build/
+
+# ── Storage (uploads, cache, logs, sessões) ─────────────────
+/storage/app/public/*
+/storage/app/imports/*
+/storage/app/backups/*
+/storage/app/caepi/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+*.log
+
+# ── Cache do Laravel ────────────────────────────────────────
+/bootstrap/cache/*.php
+
+# ── Preservar estrutura de pastas ───────────────────────────
+!**/.gitkeep
+
+# ── IDE e sistema operacional ───────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Testes e cobertura ──────────────────────────────────────
+.phpunit.result.cache
+/coverage/
+
+# ── Composer ────────────────────────────────────────────────
+composer.phar
+
+# ── npm / yarn ──────────────────────────────────────────────
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock

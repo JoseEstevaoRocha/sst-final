@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -l app/Http/Controllers/ColaboradorController.php)",
+      "Bash(php artisan:*)",
+      "Bash(php -l app/Http/Controllers/ASOController.php)",
+      "Bash(php -l app/Console/Commands/ProcessarAgendamentos.php)",
+      "Bash(php -l app/Http/Controllers/ApiController.php)",
+      "Bash(php -l app/Models/Alerta.php)",
+      "Bash(php -m)",
+      "Bash(php --ini)",
+      "Bash(php -l storage/framework/views/*.php)",
+      "Bash(powershell -Command \"Stop-Process -Name php -Force -ErrorAction SilentlyContinue; Write-Host 'php processes stopped'\")",
+      "Bash(composer dump-autoload:*)",
+      "Bash(php -r \"echo ini_get\\('max_execution_time'\\);\")",
+      "Bash(dir \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\sst-final-main-main\\\\sst-final-main-main\\\\database\\\\migrations\" /b /o:n)",
+      "Bash(grep -v \"^\\\\s*$\\\\|INFO\\\\|Psy\")"
+    ]
+  }
+}
